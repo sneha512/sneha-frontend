@@ -1,0 +1,60 @@
+<!--<html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     custome css 
+    <link rel="stylesheet" href="./all.css">
+    <title>Registration</title>
+</head>
+    <div class="nav-bar" text-align="center">
+
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <div class="submit-button ">
+                <button class="logout-btn" >Logout</button>
+            </div>
+    </div>
+    <body>
+        <p>soorji<p>
+          
+            <script src="./logout.js"></script>
+    </body>
+</html>-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="all.css" />
+    <title>dropdown Menu</title>
+  </head>
+  <body>
+    <div class="menu-bar">
+      <h1 class="logo"><span>Details</span></h1>
+      <ul>
+        <li><a href="#">Profile</a></li>
+       <li> <button class="logout-btn" >Logout</button></div>
+        </li>
+      </ul>
+    </div>
+    <script src="./logout.js"></script>
+    <div class="hero">
+      &nbsp;
+    </div>
+  </body>
+</html>
+
+<script>
+    // Storing data:
+    const myObj = { name: "John", age: 31, city: "New York" };
+    const myJSON = JSON.stringify(myObj);
+    localStorage.setItem("testJSON", myJSON);
+    
+    // Retrieving data:
+    let text = localStorage.getItem("testJSON");
+    let obj = JSON.parse(text);
+    document.getElementById("demo").innerHTML = obj.name;
+    </script>
